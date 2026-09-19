@@ -48,6 +48,14 @@
   .tag{ display:inline-block; background:#12262a; color:var(--cyan2); border:1px solid var(--cyan); border-radius:20px;
         padding:2px 12px; font-size:.8rem; margin-left:8px; }
 .marca{ position:fixed; right:14px; bottom:10px; width:110px; opacity:.16; pointer-events:none; z-index:999; }
+  .grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:16px; margin-top:16px; }
+  .feat{ background:#0e151e; border:1px solid var(--line); border-radius:10px; padding:18px; }
+  .feat b{ color:#fff; display:block; margin-bottom:4px; font-size:1.02rem; }
+  .feat p{ margin:0; color:#9fc3d4; font-size:.92rem; }
+  .gal{ display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px; margin-top:16px; }
+  .gal figure{ margin:0; }
+  .gal img{ width:100%; border-radius:10px; border:1px solid var(--line); display:block; }
+  .gal figcaption{ font-size:.85rem; color:#8fb6c9; margin-top:6px; }
 </style>
 </head>
 <body>
@@ -57,6 +65,8 @@
     <img src="tech-os-logo.png" alt="tech-0s">
     <b>tech-0s</b>
     <nav>
+      <a href="#caracteristicas">Características</a>
+      <a href="#galeria">Galería</a>
       <a href="#descargar">Descargar</a>
       <a href="#espejos">Espejos</a>
       <a href="#verificar">Verificar</a>
@@ -101,6 +111,28 @@
       <tr><td>Local</td><td>Servidor tech-0s</td>
           <td><a href="https://championships-capability-pathology-move.trycloudflare.com/tech-0s-7-gigi.iso">tech-0s-7-gigi.iso</a></td></tr>
     </table>
+  </div>
+
+  <div class="card" id="caracteristicas">
+    <h2>Por qué tech-0s</h2>
+    <div class="grid">
+      <div class="feat"><b>Ligero y rápido</b><p>Pensado para laptops modestas: consume poca RAM y responde suave.</p></div>
+      <div class="feat"><b>Asistente con IA</b><p>La terminal trae <code>tech-os ia</code>: escribe qué falla y te ayuda a arreglarlo.</p></div>
+      <div class="feat"><b>Terminal propia</b><p>Herramientas <code>tech-os</code> con ayuda integrada y comandos en español.</p></div>
+      <div class="feat"><b>Base estable</b><p>Construido sobre Debian Trixie (LMDE 7) y Cinnamon: confiable y conocido.</p></div>
+      <div class="feat"><b>Arranca en todo</b><p>Compatible con BIOS y UEFI, desde USB o DVD. También para máquinas virtuales.</p></div>
+      <div class="feat"><b>Privado y libre</b><p>Hecho a mano, sin telemetría y copyleft: el sistema es 100% tuyo.</p></div>
+    </div>
+  </div>
+
+  <div class="card" id="galeria">
+    <h2>Galería</h2>
+    <p>Vistas del escritorio tech-0s 7 "gigi".</p>
+    <div class="gal">
+      <figure><img src="images/screen-escritorio.svg" alt="Escritorio de tech-0s"><figcaption>El escritorio: Cinnamon con aspecto futurista.</figcaption></figure>
+      <figure><img src="images/screen-terminal.svg" alt="Terminal tech-os"><figcaption>La terminal propia y su asistente IA.</figcaption></figure>
+      <figure><img src="images/screen-arranque.svg" alt="Arranque de tech-0s"><figcaption>El arranque personalizado con la marca.</figcaption></figure>
+    </div>
   </div>
 
   <div class="card" id="verificar">
